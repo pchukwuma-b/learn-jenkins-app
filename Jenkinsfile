@@ -20,5 +20,10 @@ pipeline {
                 '''
             }
         }
+        stage('Test') {
+            steps {
+                sh 'echo "Tests stage passed"'
+            }
+        }
     }
 }
